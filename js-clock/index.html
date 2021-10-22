@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Regular and Military Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class='flex-wrapper'>
+        <section class="list-of-days">
+            <ul class="week">
+                <li id="day">Sunday</li>
+                <li id="day">Monday</li>
+                <li id="day">Tuesday</li>
+                <li id="day">Wednesday</li>
+                <li id="day">Thursday</li>
+                <li id="day">Friday</li>
+                <li id="day">Saturday</li>
+            </ul>
+        </section>
+        <section class="time">
+            <p class="hour" id = "digits">00</p>
+            <p class="min" id = "digits">00</p>
+            <p class="sec" id = "digits">00</p>
+            <div class="am-pm">
+                <p>AM</p>
+                <p>PM</p>
+            </div>
+        </section>
+        <section class="mode">
+            <p>12-Hour</p>
+            <p>Military Time</p>
+        </section>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

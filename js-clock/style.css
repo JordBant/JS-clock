@@ -1,0 +1,91 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-wrapper
+{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 
+======================
+Parents-(PA) & GrandParent-(GP)
+======================
+*/
+
+/* GP */ section
+{
+    display: flex;
+    width: 80vw;
+
+    justify-content: center;
+}
+
+/* PA */ .week 
+{
+    width: 100%;
+}
+
+/* GP */ .mode
+{
+    width: 40vw;
+}
+
+/* PA */.week, 
+/* GP */.mode
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* PA */ .am-pm
+{
+    align-self: center;
+    padding: 3vw;
+    font-size: clamp(17px, 3vw, 50px);
+}
+
+/* 
+======================
+Children
+======================
+*/
+
+li, .mode > *, .am-pm, .time > *
+{
+    list-style: none;
+    font-family: 'Barlow', sans-serif;
+    font-size: clamp(17px, 2.4vw, 50px);
+    /* color: #00ff97; */
+    color: #8a8a8a;
+}
+.time > p
+{
+    color: #00ff97;
+}
+
+.am-pm :first-child
+{
+    border-bottom: 5px solid black;
+}
+
+#digits
+{
+    
+    font-size: clamp(100px, 17vw, 250px);
+}
+
+.hour::after,
+.min::after
+{
+    content: ":";
+}
