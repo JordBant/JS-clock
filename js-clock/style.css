@@ -78,14 +78,14 @@ li, .mode > *, .am-pm, .time > *
     border-bottom: 5px solid black;
 }
 
-#digits
+.digits
 {
     
     font-size: clamp(100px, 17vw, 250px);
 }
 
-.hour::after,
-.min::after
+#hour::after,
+#min::after
 {
     content: ":";
 }
