@@ -89,3 +89,15 @@ li, .mode > *, .am-pm, .time > *
 {
     content: ":";
 }
+
+.mode p
+{
+    transition: all 0.2s ease-in-out;
+}
+
+.mode p:hover 
+{
+    border-top: 3px solid #038d56;
+    cursor: default;
+    color: #038d56;
+}
